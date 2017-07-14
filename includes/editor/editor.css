@@ -1,0 +1,143 @@
+body {
+	background-color: white;
+}
+#wpwrap {
+	max-width: 98%;
+	background-color: white;
+}
+
+#fca_slc_submit_button{
+	margin-right: 5px;
+}
+img[src=''] {
+	display: none !important;
+}
+
+/* INPUTS */
+.fca-slc-setting-table input {
+	border: 1px solid #ccc;
+}
+
+.fca-slc-setting-table {
+	width: 100%;
+	line-height: 34px;
+}
+.fca-slc-setting-table input:not(.ed_button), .fca-slc-setting-table textarea:not(.ed_button), .fca-slc-setting-table select:not(.ed_button) {
+	width: 100%;
+}
+
+.fca-slc-setting-table input.fca-slc-input-datetime-local {
+	width: 210px;
+}
+.fca-slc-setting-table textarea.fca-slc-input-textarea {
+	min-height: 5em;
+}
+.fca-slc-setting-table th {
+	text-align: left;
+	vertical-align: top;
+	width: 180px;
+}
+.fca-slc-setting-table td {
+	text-align: left;
+	width: calc(100% - 180px);
+}
+.fca-slc-setting-table-heading {
+	font-size: 15px;
+}
+.fca-slc-subheading {
+	line-height: normal;
+	padding-top: 30px;
+	font-size: 16px;
+}
+.fca-slc-first-subheading {
+	padding-top: 0;
+}
+.fca-slc-setting-table-info {
+	font-style: italic;
+	margin-top: 0;
+	margin-left: 3px;
+}
+
+/* TOOLTIP ICON */
+.fca_slc_tooltip {
+	font-size: 17px;
+	vertical-align: middle;
+	color: #666;
+	margin-left: 2px;
+}	
+
+
+/* IMAGE HOVER CONTROLS */
+
+div.fca-slc-image-hover-controls {
+	display: none;
+	position: relative;
+	top: -45px;
+	margin-bottom: -34px;
+}
+
+div.fca-slc-image-hover-controls:hover {
+	display: block;
+}
+
+img.fca-slc-image:hover + div.fca-slc-image-hover-controls {
+	display: block;
+}
+
+.fca-slc-image-change-btn, .fca-slc-image-revert-btn {
+	font-size: 1.5rem;
+	margin-left: 7px !important;
+}
+.fca-slc-image-upload-btn {
+	margin-bottom: 5px !important;
+}
+
+/* ON OFF SWITCH */
+
+.onoffswitch {
+    position: relative; width: 76px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 1px solid #FFF; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in-out 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: attr(data-content-on);
+    padding-left: 10px;
+    background-color: #0085ba; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: attr(data-content-off);
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #32373c;
+    text-align: right;
+	font-weight: 500;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 42px;
+    border: 1px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in-out 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
